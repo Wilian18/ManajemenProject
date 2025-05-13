@@ -15,7 +15,6 @@ class TaskController extends Controller
 
     public function store(Request $request)
     {
-        // Simulasi penyimpanan
         return redirect('/');
     }
 }
