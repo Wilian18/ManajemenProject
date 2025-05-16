@@ -12,17 +12,17 @@
 
   
     <aside class="w-64 text-white p-6 space-y-6" style="background-color: #363636;">
-    <div class="space-y-2">
-        <div class="flex items-center gap-2 font-bold text-xl">
-            <i data-lucide="home" class="w-5 h-5 text-gray-400"></i> Beranda
-          </div>
-          <div class="flex items-center gap-2">
-            <i data-lucide="list-checks" class="w-5 h-5 text-gray-400"></i> Tugas Saya
-          </div>
-          <div class="flex items-center gap-2">
-            <i data-lucide="mail" class="w-5 h-5 text-gray-400"></i> Kontak Masuk
-          </div>          
-    </div>
+        <div class="space-y-2">
+            <a href="/" class="flex items-center gap-2 font-bold text-xl">
+                <i data-lucide="home" class="w-5 h-5 text-gray-400"></i> Beranda
+            </a>
+            <a href="/tugas-saya" class="flex items-center gap-2 font-bold bg-white text-black rounded p-1">
+                <i data-lucide="list-checks" class="w-5 h-5 text-gray-400"></i> Tugas Saya
+            </a>
+            <div class="flex items-center gap-2">
+                <i data-lucide="mail" class="w-5 h-5 text-gray-400"></i> Kontak Masuk
+            </div>
+        </div>
     <div>
     <div class="flex justify-between items-center font-bold mb-1 ">
       <span>Wawasan</span>
@@ -44,7 +44,8 @@
       <div class="font-bold mb-1">Tim</div>
       <div class="pl-2">Ruang Kerja kami</div>
     </div>
-    <button class="mt-auto w-full bg-white text-black font-bold py-2 rounded">Undang Rekan Tim</button>
+    <button class="mt-auto w-full bg-white text-black font-bold py-2 rounded">
+       <i data-lucide="users"  class="w-4 h-4 text-gray-400"></i>>Undang Rekan Tim</button>
   </aside>
 
  
@@ -97,32 +98,38 @@
       <div>Status</div>
     </div>
 
-    @foreach ($tasks as $task)
-  <div class="grid grid-cols-5 bg-rose-200 p-2 rounded mb-2">
-    <div>{{ $task['nama'] }}</div>
-    <div>{{ $task['penerima'] }}</div>
-    <div>{{ $task['tenggat'] }}</div>
-    <div><span class="bg-gray-300 px-2 rounded">{{ $task['prioritas'] }}</span></div>
-    <div><span class="bg-gray-300 px-2 rounded">{{ $task['status'] }}</span></div>
-  </div>
-@endforeach
+  @isset($tasks)
+  @foreach ($tasks as $task)
+    <div class="grid grid-cols-5 bg-rose-200 p-2 rounded mb-2">
+      <div>{{ $task['nama'] }}</div>
+      <div>{{ $task['penerima'] }}</div>
+      <div>{{ $task['tenggat'] }}</div>
+      <div><span class="bg-gray-300 px-2 rounded">{{ $task['prioritas'] }}</span></div>
+      <div><span class="bg-gray-300 px-2 rounded">{{ $task['status'] }}</span></div>
+    </div>
+  @endforeach
+@endisset
+
 
 
     
     <div id="tasks-container"></div>
 
-    <section class="mt-6">
-      <h2 class="font-bold mb-2">Sedang dikerjakan</h2>
-      <div class="bg-white p-2 rounded text-gray-500">Tambahan tugas..</div>
+   <main class="flex-1 p-6 overflow-y-auto">
+ <section class="mt-6">
+      <h2 class="font-bold mb-2">Sedang Dikerjakan</h2>
+      <div class="bg-white p-2 rounded text-gray-500 border">Tambahan tugas..</div>
     </section>
 
     <section class="mt-4">
       <h2 class="font-bold mb-2">Selesai</h2>
-      <div class="bg-white p-2 rounded text-gray-500">Tambahan tugas..</div>
+      <div class="bg-white p-2 rounded text-gray-500 border">Tambahan tugas..</div>
     </section>
 
+
     <button class="mt-6 text-blue-600">+ Tambahkan bagian</button>
-  </main>
+</main>
+
 
   <script src="{{ asset('js/app.js') }}"></script>
   <script>lucide.createIcons();</script>

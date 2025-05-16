@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         const div = document.createElement('div');
-        div.className = 'grid grid-cols-5 bg-rose-100 p-2 rounded mb-2';
+        div.className = 'grid grid-cols-5 p-2 rounded mb-2';
 
         div.innerHTML = `
             <div>📝 ${task.nama}</div>

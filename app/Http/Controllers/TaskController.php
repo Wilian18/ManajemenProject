@@ -1,20 +1,21 @@
 <?php
+
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
 class TaskController extends Controller
 {
-    public function index()
+    public function manajemenProject()
     {
-        $tasks = [
-          
-        ];
-        return view('dashboard', ['tasks' => $tasks]);
+        return view('manajemen-project');
     }
+    
+public function tugasSaya()
+{
+    return view('tugas-saya');
+}
 
-    public function store(Request $request)
-    {
-        return redirect('/');
-    }
+
+
 }
