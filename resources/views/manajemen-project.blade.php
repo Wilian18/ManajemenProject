@@ -44,8 +44,11 @@
       <div class="font-bold mb-1">Tim</div>
       <div class="pl-2">Ruang Kerja kami</div>
     </div>
-    <button class="mt-auto w-full bg-white text-black font-bold py-2 rounded">
-       <i data-lucide="users"  class="w-4 h-4 text-gray-400"></i>>Undang Rekan Tim</button>
+   <button class="mt-auto w-full bg-white text-black font-bold py-2 rounded flex items-center justify-center gap-2">
+  <i data-lucide="users" class="w-4 h-4 text-gray-400"></i>
+  Undang Rekan Tim
+</button>
+
   </aside>
 
  
