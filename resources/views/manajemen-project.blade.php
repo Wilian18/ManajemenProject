@@ -3,52 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Manajemen Projeck</title>
+  <title>Manajemen Project</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="{{ asset('css/app.css') }}">
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body class="flex h-screen bg-gray-100">
+<body class="bg-gray-100 min-h-screen flex">
 
-  
-    <aside class="w-64 text-white p-6 space-y-6" style="background-color: #363636;">
-        <div class="space-y-2">
-            <a href="/" class="flex items-center gap-2 font-bold text-xl">
-                <i data-lucide="home" class="w-5 h-5 text-gray-400"></i> Beranda
-            </a>
-            <a href="/tugas-saya" class="flex items-center gap-2 font-bold bg-white text-black rounded p-1">
-                <i data-lucide="list-checks" class="w-5 h-5 text-gray-400"></i> Tugas Saya
-            </a>
-            <div class="flex items-center gap-2">
-                <i data-lucide="mail" class="w-5 h-5 text-gray-400"></i> Kontak Masuk
-            </div>
-        </div>
-    <div>
-    <div class="flex justify-between items-center font-bold mb-1 ">
-      <span>Wawasan</span>
-         <i data-lucide="plus" class="w-4 h-4 text-gray-400"></i>
-     </div>          
-     <div class="flex items-center gap-2 pl-2">
-        <i data-lucide="briefcase"  class="w-4 h-4 text-gray-400"></i> Portofolio
-      </div>
-      <div class="flex items-center gap-2 pl-2">
-        <i data-lucide="target"  class="w-4 h-4 text-gray-400"></i> Gol
-      </div>
-      
+ <aside class="w-64 text-white p-6 space-y-6" style="background-color: #363636;">
+    <div class="space-y-2">
+      <a href="/" class="flex items-center gap-2 font-bold text-xl">
+        <i data-lucide="home" class="w-5 h-5 text-gray-400"></i> Beranda
+      </a>
+       <a href="/tugas-saya" class="flex items-center gap-2 font-bold text-xl">
+        <i data-lucide="list-checks" class="w-5 h-5 text-gray-400"></i> Tugas Saya
+      </a>
+         <a href="/kontak-masuk" class="flex items-center gap-2 font-bold text-xl">
+        <i data-lucide="mail" class="w-5 h-5 text-gray-400"></i> Kontak Mask
+      </a>
     </div>
     <div>
-      <div class="font-bold mb-1">Proyek</div>
-      <div class="pl-2 bg-white text-black rounded p-1 font-bold">Manajement Project</div>
+      <div class="flex justify-between items-center font-bold mb-1">
+        <span>Wawasan</span>
+        <i data-lucide="plus" class="w-4 h-4 text-gray-400"></i>
+      </div>
+      <div class="flex items-center gap-2 pl-2">
+        <i data-lucide="briefcase" class="w-4 h-4 text-gray-400"></i> Portofolio
+      </div>
+      <div class="flex items-center gap-2 pl-2">
+        <i data-lucide="target" class="w-4 h-4 text-gray-400"></i> Gol
+      </div>
+    </div>
+    <div>
+       <div class="flex justify-between items-center font-bold mb-1">
+        <span>Proyek</span>
+        <i data-lucide="plus" class="w-4 h-4 text-gray-400"></i>
+      </div>
+        <a href="/" class="flex items-center gap-2 font-bold text-xl">
+       </i><span>Manajemen Project</span>
+      </a>
     </div>
     <div>
       <div class="font-bold mb-1">Tim</div>
       <div class="pl-2">Ruang Kerja kami</div>
     </div>
-   <button class="mt-auto w-full bg-white text-black font-bold py-2 rounded flex items-center justify-center gap-2">
-  <i data-lucide="users" class="w-4 h-4 text-gray-400"></i>
-  Undang Rekan Tim
-</button>
-
+    <button class="mt-auto w-full bg-white text-black font-bold py-2 rounded">Undang Rekan Tim</button>
   </aside>
 
  

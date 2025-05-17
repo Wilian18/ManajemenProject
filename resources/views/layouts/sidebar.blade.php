@@ -6,7 +6,10 @@
         <a href="{{ route('tugas-saya') }}" class="flex items-center gap-2 font-bold text-xl hover:text-gray-300">
             <i data-lucide="list-checks" class="w-5 h-5 text-gray-400"></i> Tugas Saya
         </a>
-        <!-- Tambahkan menu lain jika perlu -->
+        <a href="{{ route('kontak-masuk') }}" class="flex items-center gap-2 font-bold text-xl hover:text-gray-300">
+            <i data-lucide="mail" class="w-5 h-5 text-gray-400"></i> Kontak Masuk
+        </a>
+       
     </div>
     <button class="mt-auto w-full bg-white text-black font-bold py-2 rounded">Undang Rekan Tim</button>
 </aside>

@@ -16,6 +16,10 @@ public function tugasSaya()
     return view('tugas-saya');
 }
 
+public function kontakMasuk()
+{
+    return view('kontak-masuk');
+}
 
 
 }

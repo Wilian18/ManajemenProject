@@ -13,15 +13,15 @@
  
   <aside class="w-64 text-white p-6 space-y-6" style="background-color: #363636;">
     <div class="space-y-2">
-      <a href="/" class="flex items-center gap-2 font-bold text-xl">
+       <a href="/" class="flex items-center gap-2 font-bold text-xl">
         <i data-lucide="home" class="w-5 h-5 text-gray-400"></i> Beranda
       </a>
-      <a href="/tugas-saya" class="flex items-center gap-2 font-bold bg-white text-black rounded p-1">
+       <a href="/tugas-saya" class="flex items-center gap-2 font-bold text-xl">
         <i data-lucide="list-checks" class="w-5 h-5 text-gray-400"></i> Tugas Saya
       </a>
-      <div class="flex items-center gap-2">
-        <i data-lucide="mail" class="w-5 h-5 text-gray-400"></i> Kontak Masuk
-      </div>
+         <a href="/kontak-masuk" class="flex items-center gap-2 font-bold text-xl">
+        <i data-lucide="mail" class="w-5 h-5 text-gray-400"></i> Kontak Mask
+      </a>
     </div>
     <div>
       <div class="flex justify-between items-center font-bold mb-1">
@@ -36,8 +36,13 @@
       </div>
     </div>
     <div>
-      <div class="font-bold mb-1">Proyek</div>
-      <div class="pl-2 bg-white text-black rounded p-1 font-bold">Manajement Project</div>
+      <div class="flex justify-between items-center font-bold mb-1">
+        <span>Proyek</span>
+        <i data-lucide="plus" class="w-4 h-4 text-gray-400"></i>
+      </div>
+        <a href="/" class="flex items-center gap-2 font-bold text-xl">
+       </i><span>Manajemen Project</span>
+      </a>
     </div>
     <div>
       <div class="font-bold mb-1">Tim</div>
